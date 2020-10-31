@@ -5,13 +5,13 @@ Therefore, the plan is to build a very simple computer using one of these CPUs, 
 I needed a way to flash the EEPROM.
 
 <p float="left">
-  <img src="/assets/IMG_0759.jpg" alt="Arduino EEPROM programmer photo 1" width="200px" />
-  <img src="/assets/IMG_0760.jpg" alt="Arduino EEPROM programmer photo 2" width="200px" />
+  <img src="/assets/IMG_0759.jpg" alt="Arduino EEPROM programmer photo 1" width="40%" />
+  <img src="/assets/IMG_0760.jpg" alt="Arduino EEPROM programmer photo 2" width="40%" />
 </p>
 
 # Description
 
-The goal of this project is to provide a way to flash a ROM file in an EEPROM chip using an Arduino Mega. The EEPROM chip that I'm using is the ![AT28C25615U from ATMEL](/assets/eeprom_AT28C25615U.pdf).
+The goal of this project is to provide a way to flash a ROM file in an EEPROM chip using an Arduino Mega. The EEPROM chip that I'm using is the [AT28C25615U from ATMEL](/assets/eeprom_AT28C25615U.pdf).
 
 I decided to use an Arduino shield with a ROM socket to flash a ROM file from my computer to the EEPROM.
 
@@ -24,12 +24,12 @@ I created a small program (which you can find in this repository) for the Arduin
 There is also a Python program to flash a ROM file using the Arduino serial port. I reckon I was too lazy to implement a protocol like xmodem to allow a program like "screen" to upload files directly to the Arduino without the need for an additional script.
 
 The Arduino program has the following options:
-    1 - Read ROM
-    2 - Write ROM
-    3 - Read byte at address
-    4 - Write byte to address
-    5 - Erase ROM - 6502 NOP
-    6 - Erase ROM
+1. Read ROM
+2. Write ROM
+3. Read byte at address
+4. Write byte to address
+5. Erase ROM - 6502 NOP
+6. Erase ROM
 
 This menu is displayed when the Arduino is connected using a serial interface (e.g. Arduino monitor, or using a tool like screen or putty). 
 
