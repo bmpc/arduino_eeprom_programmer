@@ -2,18 +2,20 @@ I started following the [Ben Eater's awesome tutorials](https://eater.net/6502) 
 
 The plan is to build a very simple computer using one of these CPUs, a ROM, RAM, IO, Serial, and other logic chips.
 
-<p float="left">
-  <img src="/assets/IMG_0759.jpg" alt="Arduino EEPROM programmer photo 1" width="40%" />
-  <img src="/assets/IMG_0760.jpg" alt="Arduino EEPROM programmer photo 2" width="40%" />
-</p>
-
 # Description
 
 The goal of this project is to provide a way to flash a ROM file in an EEPROM chip using an Arduino Mega. The EEPROM chip that I'm using is the [AT28C25615U from ATMEL](/assets/eeprom_AT28C25615U.pdf).
 
 I decided to use an Arduino shield with a ROM socket to flash a ROM file from my computer to the EEPROM.
 
-The first step was to solder a bunch of wires for the address and data bus. There are also 3 control lines for the **Write Enable**, **Output Enable**, and **Chip Enable** pins specifically, that I needed to redirect to the Arduino as well. There are a total of 16 pins I need to control and the Arduino Mega is great for this job as it has enough digital pins. Using an Arduino Uno (or mini) is also possible, provided that we [use shift registers for the address lines](https://www.youtube.com/watch?v=K88pgWhEb1M).
+The first step was to solder a bunch of wires for the address and data bus. There are also 3 control lines for the **Write Enable**, **Output Enable**, and **Chip Enable** pins specifically, that I needed to redirect to the Arduino as well. There are a total of 16 pins I need to control and the Arduino Mega is great for this job as it has enough digital pins. 
+
+Using an Arduino Uno (or mini) is also possible, provided that we [use shift registers for the address lines](https://www.youtube.com/watch?v=K88pgWhEb1M).
+
+<p float="left">
+  <img src="/assets/IMG_0759.jpg" alt="Arduino EEPROM programmer photo 1" width="40%" />
+  <img src="/assets/IMG_0760.jpg" alt="Arduino EEPROM programmer photo 2" width="40%" />
+</p>
 
 # How it works
 
