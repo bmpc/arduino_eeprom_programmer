@@ -1,8 +1,6 @@
 I started following the [Ben Eater's awesome tutorials](https://eater.net/6502) to create my own retro computer using chips from the golden age of PCs. The 6502 and the z80 CPUs started the personal computer revolution back in the 70s and 80s.
 
-Therefore, the plan is to build a very simple computer using one of these CPUs, a ROM, RAM, IO, Serial, and other logic chips.
-
-I needed a way to flash the EEPROM.
+The plan is to build a very simple computer using one of these CPUs, a ROM, RAM, IO, Serial, and other logic chips.
 
 <p float="left">
   <img src="/assets/IMG_0759.jpg" alt="Arduino EEPROM programmer photo 1" width="40%" />
